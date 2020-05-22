@@ -1,0 +1,136 @@
+贝叶斯分类是一类分类算法的总称，这类算法均以贝叶斯定理为基础，故统称为贝叶斯分类。而朴素朴素贝叶斯分类是贝叶斯分类中最简单，也是常见的一种分类方法。
+
+朴素贝叶斯：   特征独立   没有超参数（不需要调参）
+
+文档分类（最常用）
+
+P(科技|词1，词2,...)
+P(娱乐|词a,词b,...)
+
+拉普拉斯平滑：如果词频列表里面有很多次数都为0，很可能计算结果都为0
+
+解决办法：拉普拉斯平滑系数
+
+P(F1|C) = (Ni + a) / (N + am)
+
+a为指定的系数一般为1，m为训练文档中统计出的特征词个数
+
+sklearn朴素贝叶斯实现API：sklearn.naive_bays.MultionmialNB
+
+sklearn.naive_bays.MultionmialNB(alpha = 1.0)
+alpha：拉普拉斯平滑系数
+
+
+朴素贝叶斯案例流程：
+
+1、加载20类新闻数据，并进行分割
+
+2、生成文章特征词
+
+3、朴素贝叶斯estimator流程进行预估
+
+
+朴素贝叶斯分类优缺点：
+
+	优点：
+
+		朴素贝叶斯模型发源于古典数学理论，有稳定的分类效率
+
+		对缺失数据不太敏感，算法也比较简单，常用于文本分类
+
+		分类准确度高，速度快
+
+	缺点：
+
+		由于使用了样本属性独立性的假设，所以如果样本属性有关联时，其效果不好
+
+
+
+分类模型的评估：
+
+	estimator.score():一般最常见使用的是准确率，即预测结果正确的百分比
+
+	混淆矩阵：
+
+		在分类任务下，预测结果（Predicted Condition）与正确标记（True Condition）之间存在四种不同的组合，构成混淆矩阵（适用于多分类）
+                                    预测结果
+                                正例             反例
+                       （true positive）      (false negative)
+                    正例    真正例TP            伪反例FN
+		真实结果
+						(false positive)      (true negative)
+   					反例		伪正例FP			   真反例TN
+
+   	评估标准：
+   	准确率
+   	精确率和召回率
+
+   	精确率（Precision）:预测结果为正例样本中真实为正例的比例（查的准）
+
+   	召回率（Recall）:真实为正例的样本中预测结果为正例的比例（查的全，对正样本的区分能力）
+
+   	其他分类标准：
+
+   	F1-score，反映了模型的稳健性
+
+   	F1 = 2 * Precision * Recall / (Precision + Recall)   越高越好
+
+
+   	分类模型评估API：sklearn.metrics.classification_report
+
+   	sklearn.metrics.classification_report(y_true,y_pred,target_names=None)
+
+   	y_true : 真实目标值
+
+   	y_pred：估计器预测目标值
+
+   	target_names：目标类别名称
+
+   	return：每个类别精确率与召回率
+
+
+   	模型的选择与调优
+
+   	1、交叉验证：为了让被评估的模型更加准确可信
+
+   		所有数据分成n等分（将拿到的训练数据，分为训练集和验证集）
+
+   		举例：将数据分为5份，其中一份作为验证集，然后经过5次（组）的测试，每次都更换不同
+
+   		的验证集。即得到5组模型的结果，取平均值作为最终结果，又称5折交叉验证
+
+   	2、网格搜索（超参数搜索）：调参数（K-近邻：k值；决策树）
+
+   		通常情况下，有很多参数是需要手动指定的（如k-近邻算法中的k值），这种叫超参数。但是
+
+   		手动过程繁杂，所以需要对模型预设集中超参数组合。每组超参数都采用交叉验证来进行评估
+
+   		。最后选出最优参数组合建立模型
+
+
+   	超参数搜索-网格搜索API：sklearn.model_selection.GridSearchCV
+
+   	sklearn.model_selection.GridSearchCV(estimator,param_grid=None,cv=None)
+
+   		对估计器的指定参数值进行详尽搜索
+
+   		estimator：估计器对象
+
+   		param_grid：估计器参数（dict）{"n_neighbors":[1,3,5]}
+
+   		cv：指定几折交叉验证
+
+   		fit：输入训练数据
+
+   		score:准确率
+
+   		结果分析：
+
+   			best_score_:在交叉验证中验证的最好结果
+
+   			best_estimator_:最好的参数模型
+
+   			cv_results_:每次交叉验证后的验证集准确率结果和训练集准确率结果
+
+
+

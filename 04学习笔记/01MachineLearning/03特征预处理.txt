@@ -1,0 +1,79 @@
+特征预处理：对数据进行处理
+特征预处理是什么：
+	通过特定的统计方法（数学方法）将数据转换成算法要求的数据
+	数值型数据：标准缩放：
+				1、归一化
+				2、标准化
+	类别型数据：one-hot编码
+	时间类型：时间的切分
+sklearn特征处理API：sklearn.preprocessing
+
+
+
+归一化：（并不是所有场景都需要）
+	通过对原始数据进行变换把数据映射到（默认为[0,1]之间）
+	公式：x'=（x - min）/ (max - min) 
+	     x''=x'*(mx - mi) + mi
+	     注：作用于每一列，max为一列的最大值，min为一列的最小值，那么x''为最终结果，mx,mi分别为指定区间值默认mx为1，mi为0
+
+MinMaxScaler语法
+	MinMaxScaler(feature_range=(0,1)...)
+		每个特征缩放到给定范围（默认[0,1]）
+	MinMaxScaler.fit_transform(x)
+		x:numpy array格式的数据[n_samples,n_features]
+		返回值：转换后的形状相同的array  
+步骤：
+	1、实例化MinMaxScaler
+	2、通过fit_transform转换
+
+给出的特征同等重要的时候：进行归一化
+目的：使某一特征对最终结果不会造成更大影响
+
+数据异常点过多，会导致最大值最小值变化
+归一化总结： 注意在特定场景下最大值最小值是变化的，另外，最大值与最小值非常容易受异常点影响，所以这种方法鲁棒性较差，只适合传统精确小数据场景
+
+
+
+标准化：
+特点：通过对原始数据进行变换把数据变换到均值为0，方差为1范围内
+
+公式：x'=(x-mean)/&  
+注：作用于每一列的mean为平均值，&为标准差
+var成为方差，var=((x1-mean)2+(x2-mean)2+...)/n(每个特征的样本数)，&是var的平方根
+其中：方差（考量数据的稳定性）
+
+对于归一化来说：如果出现异常点，影响了最大值和最小值，那么结果显然会发生改变
+
+对于标准化来说：如果出现异常点，由于具有一定数据量，少量的异常点对与平均值的影响并不大，从而方差改变较小
+sklearn特征化API：scikit-learn.preprocessing.StandardScaler
+StandardScaler语法
+	StandardScaler(...):
+		处理之后每列来说所有数据都聚集在均值0附近标准差为1
+	StandardScaler.fit_transform(x)
+		x:numpy array格式的数据[n_samples,n_features]
+		返回值：转换后的形状相同的array  
+	StandardScaler.mean_
+		原始数据中每列特征的平均值
+	StandardScaler.std_
+		原始数据每列特征的方差
+
+
+对于缺失值：
+处理方法：
+1、删除：如果每列或者行数据缺失值达到一定的比例，建议放弃整行或者整列
+  查补：可以通过缺失值每行或者每列的平均值、中位数来填充
+
+2、sklearn缺失值API:sklearn.preprocessing.Imputer
+Imputer(missing_values='NaN',strategy='mean',axis=0)
+	完成缺失值插补
+	Imputer.fit_transform(x)
+		x:numpy array格式的数据[n_samples,n_features]
+		返回值：转换后的形状相同的array
+
+数据当中的缺失值：np.nan,不符合的话可以使用replace替换成np.nan形式
+
+关于np.nan(np.NaN)
+
+1、numpy的数组中可以使用np.nan/np.NaN来代替缺失值，属于float类型
+
+2、如果是文件中的一些缺失值，可以替换成nan,通过np.array转换成float型的数组即可

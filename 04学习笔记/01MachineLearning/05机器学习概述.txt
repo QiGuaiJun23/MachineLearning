@@ -1,0 +1,168 @@
+机器学习基础：
+
+	1、机器学习开发流程
+
+	2、机器学习算法分类
+
+	3、机器学习模型是什么
+
+明确：
+
+	1、算法是核心，数据和计算是基础
+
+	2、找准定位   
+
+		1、分析很多的数据
+
+		2、分析具体的业务
+
+		3、应用常见的算法
+
+		4、特征工程、调参数、优化
+
+机器学习算法判别依据：
+
+数据类型：
+
+	离散型数据：
+
+		由记录不同类别个体的数目所得到的数据，又称计数数据，所有这些数据全部是整数，而且不能再细分，也不能进一步提高他们的精确度
+
+	连续型数据：
+
+		变量可以在某个范围内取任一数，即变量的取值可以是连续的，如长度，时间，质量值等，这类整数通常是非整数，含有小数部分。
+
+	注：只要记住一点，离散型是区间内不可分，连续型是区间内可分
+
+机器学习算法分类：
+
+	监督学习（预测）：（有特征值有目标值）
+
+		分类：K-近邻算法、贝叶斯分类、决策树与随机森林、逻辑回归、神经网络
+
+		回归：线性回归、岭回归
+
+		标注：隐马尔科夫模型
+
+	无监督学习：（无目标值）
+
+		聚类:k-means
+
+
+监督学习 ： 分类算法（目标值是离散型）  回归算法（连续型）
+
+
+机器学习算法步骤：
+
+	1、原始数据：
+
+		明确问题做什么 （建立模型：根据数据类型划分应用种类）
+
+	2、数据的基本处理：pandas去处理数据（缺失值，合并表，。。。）
+
+	3、特征工程（特征进行处理）    （非常重要）
+
+	4、找到合适的算法去进行预测     模型： 算法 + 数据
+
+	5、模型评估，判定效果（没有合格的话，换算法、参数，或者特征工程）
+
+	6、上线使用（以API形式提供）
+
+
+
+
+
+sklearn数据集：
+
+1、数据集划分：训练集（占比大）    测试集
+
+70% 30%
+
+80% 20%
+
+75% 25%（大多数）
+
+
+训练集：  建立模型
+
+测试集：  评估模型
+
+2、sklearn数据集划分API:sklearn.model_selection.train_test_split
+
+scikit-learn数据集API介绍：
+
+	sklearn.datasets:加载获取流行数据集
+
+		datasets.load_*():获取小规模数据集，数据包含在datasets里
+
+		datasets.fetch_*(data_home=None):获取大规模数据集，需要从网络上下载，函数的第一
+
+		参数是data_home,表示数据集下载的目录，默认是~/scikit_learn_data/
+
+
+获取数据集返回的类型：
+
+load*和fetch*返回的数据类型datasets.base.Bunch(字典格式)
+
+data:特征数据数组，是[n_samples*n_features]的二维numpy.ndarray数组
+
+target：标签数组，是n_samples的一维numpy.ndarray数组
+
+DESCR:数据描述
+
+feature_names:特征名，新闻数据，手写数字，回归数据集没有
+
+target_names:标签名
+
+数据集进行分割：
+
+sklearn.model_selection.train_test_split(*array,**options)
+
+	x:数据集的特征值
+
+	y:数据集的标签值
+
+	test_size：测试集的大小，一般为float
+	
+	random_state：随机数种子，不同的种子会造成不同的随机采样结果。相同的种子采样结果相同
+
+	return：训练集特征值，测试集特征值，训练标签，测试标签（默认随机取）
+
+3、转换器与预估器
+
+转化器：
+
+#fit_trandform()    最常用
+#fit():输入数据,但不做事情    计算平均值和标准差
+#transform()：进行数据的转换
+
+特征工程的步骤：
+	1、实例化（实例化的一个转换器类Transformer）
+	2、调用fit_transform（对于文档建立分类词频矩阵，不能同时调用）
+
+估计器：
+在sklearn中，估计器（estimator）是一个重要的角色，是一类实现了算法的API
+
+1、用于分类的估计器：
+	sklearn.neighbors   k-近邻算法
+	sklearn.naive_bays   贝叶斯
+	sklearn.linear_model.LogisticRegression   逻辑回归
+	sklearn.tree         决策树与随机森林
+2、用于回归的估计器：
+	sklearn.linear_model.LinearRegression    线性回归
+	sklearn.linear_model.Ridge              岭回归
+
+还有聚类等算法。
+
+每个算法API当中的参数
+
+估计器
+
+1、调用fit(x_train,y_train)
+
+ 
+2、输入与测试集的数据（x_test,y_test）
+
+ 	1、预测值  y_predict=predict(x_test)
+
+ 	2、预测的准确率：score(x_test,y_test)

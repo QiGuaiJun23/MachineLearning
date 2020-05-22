@@ -1,0 +1,97 @@
+一、数据集组成
+机器学习的数据：文件csv
+为什么不存在Mysql中？：
+1、性能瓶颈、读取速度
+2、格式不太符合机器学习要求数据的格式
+
+Pandas读取工具  
+Numpy:释放GIL锁（历史遗留问题）   真正的多线程
+
+3、数据集的构成
+Kaggle特点：
+1、	大数据竞赛平台
+2、	80万科学家
+3、	真实数据
+4、	数据量巨大
+UCI特点：
+1、	收录了360个数据集
+2、	覆盖科学、生活、经济等领域
+3、	数据量几十万
+Scikit-learn特点：
+1、	数据量小
+2、	方便学习
+二、	常用数据及数据的结构组成
+结构：特征值+目标值
+注：有的数据集可以没有目标值
+三、	特征工程的定义
+机器学习：重复值？ 不需要进行去重
+Pandas：一个数据读取非常方便以及基本的处理格式的工具
+Sklearn：对于特征的处理提供了强大的接口
+
+在比赛中，算法大家都知道，最后的结果相差不大，主要的一个因素是对特征的处理。
+
+特征工程是将原始数据转换为更好地代表预测模型的潜在问题的特征的过程，从而提高了对未知数据的预测准确性。
+四、	特征工程的意义
+直接影响预测的结果
+五、	scikit-learn库介绍
+python语言的机器学习工具
+scikit-learn包括许多知名的机器学习算法的实现
+scikit-learn文档完善，容易上手，丰富的API，使其在学术界颇受欢迎
+六、	特征抽取
+特征抽取对文本等数据进行特征值化（特征值化是为了计算机更好的去理解数据）
+Sklearn特征抽取API：sklearn.feature_extraction
+七、字典特征抽取：对字典数据进行特征值化（sklearn.feature_extraction.DictVectorizer）
+DictictVectorize语法：
+1、DictVectorizer(sparse=True,….)
+DictVectorizer.fit_transform(x)
+X:字典或者包含字典的迭代器
+返回值，返回sparse矩阵
+2、	DictVectorizer.inverse_transform(x)
+X:array数组或者sparse矩阵
+返回值：转换之前数据格式
+3、	DictVectorizer.get_feature_names()
+返回类别名称
+4、	DictVectorizer.transform(x):
+按照原先的标准转换
+字典数据抽取:把字典中一些类别数据，分别进行转换成特征
+拿到的数据：有数组形式：有类别的这些特征先要转换成字典数据再抽取
+处理完的数据称为One-hot编码
+
+八、	文本特征抽取
+作用：对文本数据进行特征值化
+类：sklearn.feature_extraction.text.CountVectorizer
+CountVectorizer语法：
+CountVectorizer():返回词频矩阵
+  CountVectorizer.fit_transform(x)
+  X：文本或者包含文本字符串的可迭代对象
+  返回值：返回sparse矩阵
+CountVectorizer.inverse_transform(x)
+  X:array数组或者sparse矩阵
+返回值：转换之前数据格式
+CountVectorizer.get_feature_names()
+  返回值：单词列表
+流程：
+1、	实例化类CountVectorizer
+2、	调用fit_transform方法输入数据并转换
+1、	注意返回格式，利用toarray()进行sparse矩阵转换array数组
+
+文本特征抽取：Count    文本分类、情感分析
+
+九、	tf-idf分析问题
+tf：term frequency：词的频率         出现次数
+idf: 逆文档频率 inverse document frequency    log(总文档数量/该词出现的文档数量) 
+tf * idf：重要性程度
+TF-IDF的主要思想是：如果某个词或短语在一篇文章中出现的概率高，并且在其他文章中很少出现，则认为此词或者短语具有很好的类别区分能力，适合用来分类。
+TF-IDF作用：用以评估一字词对于一个文件集或一个语料库中的其中一份文件的重要程度。
+类：sklearn.feature_extraction.text.TfidfVectorizer
+TfidfVectorizer语法
+TfidfVectorizer(stop_words=None,…)
+返回词的权重矩阵
+TfidfVectorizer.fit_transform(x)
+X:文本或者包含文本字符串的可迭代对象
+返回值：返回sparse矩阵
+TfidfVectorizer.inverse_transform(x)
+X:array数组或者sparse矩阵
+返回值：转化之前数据格式
+TfidfVectorizer.get_feature_names()
+返回值：单词列表

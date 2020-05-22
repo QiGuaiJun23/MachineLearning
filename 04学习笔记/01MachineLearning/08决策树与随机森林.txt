@@ -1,0 +1,155 @@
+算法非常重要
+
+认识决策树：
+
+	信息论的创始人——香农    信息的单位：比特
+
+信息和消除不确定性是相联系的
+
+决策树的划分依据之一——信息增益：
+
+	特征A对训练数据集D的信息增益g(D,A),定义为集合D的信息熵H(D)与特征A给定条件下D的信息条件熵H(D|A)之差，即公式为：
+
+		g(D,A) = H(D) - H(D|A)
+
+	注：信息增益表示得知特征X的信息而使得类Y的信息的不确定性减少的程度
+
+	常见决策树使用的算法：
+
+	ID3:
+
+		信息增益 最大的准则
+
+	C4.5：
+
+		信息增益比 最大的准则
+
+	CART：
+
+		回归树：平方误差最小
+
+		分类树：基尼系数  最小的准则   在sklearn中可以选择划分的默认原则（基尼系数：划分更加仔细）
+
+sklearn决策树API：
+
+	class sklearn.tree.DecisionTreeClassifier(criterion='gini',max_depth=None,random_state=None)
+
+		决策树分类器
+
+		criterion:默认是'gini'系数，也可以选择信息增益的熵'entropy'
+
+		max_depth：树的深度大小
+
+		random_state：随机数种子
+
+		method:
+
+		decision_path：返回决策树的路径
+
+
+
+决策树的结构、本地保存
+
+1、sklearn.tree.export_graphviz()该函数能够导出DOT格式
+tree.export_graphviz(estimator,out_file = 'tree.dot',feature_names=[","])
+
+2、工具：（能够将dot文件转换为pdf,png）
+安装graphviz
+
+3、运行命令（dot -Tpng tree.dot -o tree.png）
+
+
+
+泰坦尼克号乘客生存分类模型：
+
+	1、pd读取数据
+
+	2、选择有影响的特征，处理缺失值
+
+	3、进行特征工程，pd转换字典，特征抽取x_train.to_dict(orient = "records")
+
+	4、决策树估计器流程
+
+
+
+决策树的优缺点以及改进
+
+	优点：
+
+		简单的理解和解释，树木可视化
+
+		需要很少的数据准备，其他技术通常需要数据归一化
+
+	缺点：
+
+		决策树学习者可以创建不能很好的推广数据的过于复杂的树，这被称为过拟合
+
+	改进：
+
+		剪枝cart算法（决策树API当中已经实现，随机森林参数调优有相关介绍）
+
+		随机森林
+
+	注：企业重要决策，由于决策树很好的分析能力，在决策过程应用较多
+
+
+集成学习方法——随机森林
+
+	集成学习方法：
+
+		集成学习通过建立几个模型组合来解决单一预测问题。它的工作原理是生成多个分类器/模型，各自独立的学习和做出预测。这些预测最后结合成单预测，因此优于任何一个单分类做出的预测。
+
+	随机森林：
+
+		在机器学习中，随机森林是一个包含多个决策树的分类器，并且其输出的类别是由个别树输出的类别的众数而定。
+
+随机森林建立多个决策树的过程：               N个样本   M个特征
+
+	单个树建立过程：
+
+		1、随机在N个样本当中选择一个样本，重复N次   样本有可能重复
+
+		2、随机在M个特征当中选出m个特征      m取值
+
+	建立10棵决策树，样本、特征大多不一样    随机有放回的抽样（bootstrap）
+
+
+	为什么要随机抽样训练集？
+
+		如果不进行随机抽样，每棵树的训练集都一样，那么最终训练出的树分类结果也是完全一样的
+
+	为什么要有放回的抽样？
+
+		如果不是有放回的抽样，那么每棵树的训练样本都是不同的，都是没有交集的，这样每棵树都是"有偏的"，都是绝对"片面的"（当然这样说可能不对），也就是说每棵树训练出来都是有很大的差异的；而随机森林最后分类取决于多棵树（弱分类器）的投票表决
+
+随机森林API：sklearn.ensemble.RandomForestClassifier(n_estimators=10,criterion='gini',max_depth=None,bootstrap=True,random_state=None)
+
+	随机森林分类器
+
+	n_estimators:integer,optional(default=10)森林里的树木数量120，200，300，500，800，1200
+
+	criteria：string,可选（default="gini"）分割特征的测量方法
+
+	max_depth:integer或None,可选（默认=无）树的最大深度5，8，15，25，30
+
+	max_features="auto"，每个决策树的最大特征数量
+
+		if "auto",then 'max_features=sqrt(n_features)'
+
+		if "sqrt",then 'max_features=sqrt(n_features)'
+
+		if "log2",then 'max_features=log2(n_features)'
+
+		if "None",then 'max_features=n_features'\
+
+	bootstrap:boolean,optional(default = True)是否在构建树时使用放回抽样
+
+随机森林的优点（几乎没有缺点，唯一的缺点是参数的选取）
+
+	在当前所有算法中，具有极好的准确率
+
+	能够有效地运行在大数据集上
+
+	能够处理具有高维特征的输入样本，而且不需要降维
+
+	能够评估各个特征在分类问题上的重要性

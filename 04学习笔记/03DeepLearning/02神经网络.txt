@@ -1,0 +1,65 @@
+input layer -----------hidden layer 1------------hidden layer 2 -------output layer
+
+x1  x2 ..(像素点)       权重参数计算部分
+
+线性方程：f = W x
+
+非线性方程：f = W2 max(0,W1x)  单层的神经网络
+
+双层的神经网络： f  = W3 max(0,W2 max(0,W1x) )               
+
+激活函数：ReLU  max(0,x)
+
+神经网络过拟合现象严重
+
+
+正则化项在神经网络中的重要作用
+
+
+泛化能力要强
+
+越多的神经元，就越能够表达复杂的模型
+
+数据预处理：
+
+	1、数据-平均值(x -= np.mean(x,axis=0))
+
+	2、标准化      x/=np.std(x,axis=0)
+
+权重初始化：
+
+	高斯初始化或者随机初始化（w = 0.01*np.random.randn(D,H)）
+
+	b值用常值初始化就可以
+
+DROP-OUT：训练神经网络时，drop部分神经元(随机选择)
+
+
+
+	    		机器学习                         深度学习
+
+
+	    算法    分类：神经网络(简单)             神经网络(深度)
+	    									   图像：卷积神经网络
+	    		回归							自然语言处理：循环神经网络
+
+
+
+深度学习框架：
+
+	TensorFlow
+
+	Caffe
+
+	Torch
+
+	Theano
+
+	deeplearning4j
+
+	CNTK
+
+	DSSTNE
+
+	
+

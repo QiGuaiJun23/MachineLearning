@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="78c8a64b-c51d-4966-a71c-9dcfcc5d9166" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03机器学习/分类算法/SVM支持向量机/svm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04学习笔记/13支持向量机" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1Udr2pU0P8b1BZT3G0PVGUdXnOX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="D:/Anaconda/envs/tensorflow" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PyCharmProjects\07DeepLearning\01ModelBuilding" />
+      <recent name="E:\PyCharmProjects\03机器学习\聚类算法\K-means" />
+      <recent name="E:\PyCharmProjects\03机器学习\分类算法\贝叶斯" />
+      <recent name="E:\PyCharmProjects\03机器学习\分类算法\K-近邻" />
+      <recent name="E:\PyCharmProjects\03机器学习\分类算法\决策树和随机森林" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.itemcf">
+    <configuration name="鸢尾花数据集分割" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PyCharmProjects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/02数据集操作/分割" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/02数据集操作/分割/鸢尾花数据集分割.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="标准化" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PyCharmProjects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/特征工程/特征预处理" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/特征工程/特征预处理/标准化.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="itemcf" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PyCharmProjects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/05RecommendationSystem/ItemCF" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05RecommendationSystem/ItemCF/itemcf.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="surprise" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PyCharmProjects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/05RecommendationSystem/API" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="E:\PyCharmProjects\05RecommendationSystem\API\surprise_api.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="surprise_api" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PyCharmProjects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/05RecommendationSystem/API" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05RecommendationSystem/API/surprise_api.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="usercf" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PyCharmProjects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/05RecommendationSystem/UserCF" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05RecommendationSystem/UserCF/usercf.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.itemcf" />
+        <item itemvalue="Python.usercf" />
+        <item itemvalue="Python.surprise_api" />
+        <item itemvalue="Python.surprise" />
+        <item itemvalue="Python.鸢尾花数据集分割" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="78c8a64b-c51d-4966-a71c-9dcfcc5d9166" name="Default Changelist" comment="" />
+      <created>1575697109309</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575697109309</updated>
+      <workItem from="1575697113938" duration="3465000" />
+      <workItem from="1575701004060" duration="7720000" />
+      <workItem from="1575718586026" duration="5987000" />
+      <workItem from="1575773839221" duration="8979000" />
+      <workItem from="1575874308225" duration="47467000" />
+      <workItem from="1576220652004" duration="19556000" />
+      <workItem from="1576290021321" duration="54276000" />
+      <workItem from="1576674529908" duration="15608000" />
+      <workItem from="1576819778943" duration="70464000" />
+      <workItem from="1578019552348" duration="1860000" />
+      <workItem from="1578137997505" duration="36000" />
+      <workItem from="1578148491855" duration="2568000" />
+      <workItem from="1578190486277" duration="279000" />
+      <workItem from="1578190777476" duration="204000" />
+      <workItem from="1578191003203" duration="4435000" />
+      <workItem from="1578211561898" duration="2254000" />
+      <workItem from="1578301269112" duration="3722000" />
+      <workItem from="1578364003476" duration="975000" />
+      <workItem from="1578364998852" duration="926000" />
+      <workItem from="1578379094905" duration="47343000" />
+      <workItem from="1578885573407" duration="249000" />
+      <workItem from="1578988364699" duration="937000" />
+      <workItem from="1578989352619" duration="9739000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PyCharmProjects$Logistic.coverage" NAME="Logistic Coverage Results" MODIFIED="1576592705926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03机器学习/回归算法/逻辑回归" />
+    <SUITE FILE_PATH="coverage/PyCharmProjects$fit_transform.coverage" NAME="fit_transform Coverage Results" MODIFIED="1575890347230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/数据集操作/转换器" />
+    <SUITE FILE_PATH="coverage/PyCharmProjects$DecisionTree.coverage" NAME="DecisionTree Coverage Results" MODIFIED="1576497157397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03机器学习/分类算法" />
+    <SUITE FILE_PATH="coverage/PyCharmProjects$DBSCAN_test.coverage" NAME="DBSCAN_test Coverage Results" MODIFIED="1576760690905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03机器学习/聚类算法/DBSCAN" />
+    <SUITE FILE_PATH="coverage/PyCharmProjects$ClassificationModelBuilding.coverage" NAME="ClassificationModelBuilding Coverage Results" MODIFIED="1578365262513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/07DeepLearning/01ModelBuilding" />
+    <SUITE FILE_PATH="coverage/PyCharmProjects$KNN_dating.coverage" NAME="KNN-dating Coverage Results" MODIFIED="1578366325648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03机器学习/分类算法/K-近邻" />
+    <SUITE FILE_PATH="coverage/PyCharmProjects$GMM.coverage" NAME="GMM Coverage Results" MODIFIED="1577351343360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03机器学习/聚类算法/GMM" />
+    <SUITE FILE_PATH="coverage/PyCharmProjects$PCA__.coverage" NAME="PCA(主成分分析) Coverage Results" MODIFIED="1576905644380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01特征工程/特征降维" />
+    <SUITE FILE_PATH="coverage/PyCharmProjects$LinearRegression.coverage" NAME="LinearRegression Coverage Results" MODIFIED="1576586795196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03机器学习/回归算法/线性回归" />
+    <SUITE FILE_PATH="coverage/PyCharmProjects$01GraphSession.coverage" NAME="01GraphSession Coverage Results" MODIFIED="1578201285500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/07DeepLearning" />
+    <SUITE FILE_PATH="coverage/PyCharmProjects$.coverage" NAME="鸢尾花数据集分割 Coverage Results" MODIFIED="1578366349458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/02数据集操作/分割" />
+    <SUITE FILE_PATH="coverage/PyCharmProjects$itemcf.coverage" NAME="itemcf Coverage Results" MODIFIED="1579076032941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05RecommendationSystem/ItemCF" />
+    <SUITE FILE_PATH="coverage/PyCharmProjects$Xgboost.coverage" NAME="Xgboost Coverage Results" MODIFIED="1577199535981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03机器学习/集成学习" />
+    <SUITE FILE_PATH="coverage/PyCharmProjects$NaiveBayes.coverage" NAME="NaiveBayes Coverage Results" MODIFIED="1576335197131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03机器学习/分类算法" />
+    <SUITE FILE_PATH="coverage/PyCharmProjects$SVM.coverage" NAME="SVM Coverage Results" MODIFIED="1577089016896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03机器学习/分类算法/SVM支持向量机" />
+    <SUITE FILE_PATH="coverage/PyCharmProjects$surprise.coverage" NAME="surprise Coverage Results" MODIFIED="1578382578199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05RecommendationSystem/API" />
+    <SUITE FILE_PATH="coverage/PyCharmProjects$GMMKmeans.coverage" NAME="GMMKmeans Coverage Results" MODIFIED="1577354391406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03机器学习/聚类算法/GMM" />
+    <SUITE FILE_PATH="coverage/PyCharmProjects$Kmeans.coverage" NAME="Kmeans Coverage Results" MODIFIED="1576754662400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03机器学习/聚类算法/K-means" />
+    <SUITE FILE_PATH="coverage/PyCharmProjects$KNN.coverage" NAME="KNN Coverage Results" MODIFIED="1576329762582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03机器学习/分类算法" />
+    <SUITE FILE_PATH="coverage/PyCharmProjects$DBSCAN.coverage" NAME="DBSCAN Coverage Results" MODIFIED="1576759426574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03机器学习/聚类算法/DBSCAN" />
+    <SUITE FILE_PATH="coverage/PyCharmProjects$test_KNN.coverage" NAME="test-KNN Coverage Results" MODIFIED="1576241183275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03机器学习/分类算法" />
+    <SUITE FILE_PATH="coverage/PyCharmProjects$usercf.coverage" NAME="usercf Coverage Results" MODIFIED="1578581848508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05RecommendationSystem/UserCF" />
+    <SUITE FILE_PATH="coverage/PyCharmProjects$DecisionTree_gain.coverage" NAME="DecisionTree_gain Coverage Results" MODIFIED="1576464442319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03机器学习/分类算法" />
+    <SUITE FILE_PATH="coverage/PyCharmProjects$surprise_api.coverage" NAME="surprise_api Coverage Results" MODIFIED="1578404481596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05RecommendationSystem/API" />
+  </component>
+</project>

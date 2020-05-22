@@ -1,0 +1,115 @@
+tensor:张量，就指代的是数据
+
+operation：(op)：专门运算的操作节点
+
+所有操作都是一个op
+
+图：graph：整个程序的结构
+
+
+会话：session：运算程序的图
+
+
+           计算密集型            IO密集型
+
+框架        tensorflow        django、scrapy
+
+			cpu计算			http请求、磁盘操作等等
+
+
+图：
+
+	图默认已经注册，一组表示tf.Operation计算单位的对象和tf.Tensor表示操作之间流动的数据单元的对象
+
+	获取调用：
+
+		1、tf.get_default_graph()
+
+		2、op、sess或者tensor的graph属性
+
+图可以重新创建：
+
+	tf.Graph()
+
+	使用新创建的图：
+
+		g=tf.Graph()
+
+		with g.as_default():
+
+			a=tf.constant(1.0)
+
+			assert c.graph is g
+
+
+哪些是op：(只要使用tensorflow的API定义的函数都是op)
+
+	标量运算
+
+	向量运算
+
+	矩阵运算
+
+	带状态的运算
+
+	神经网络组件
+
+	存储、恢复
+
+	队列及同步运算
+
+	控制流
+
+
+tensorflow：前端系统：定义程序的图的结构
+
+			后端系统：运算图结构
+
+
+会话：
+
+	1、运行图的结构
+
+	2、分配资源计算
+
+	3、掌握资源(变量的资源，队列，线程)
+
+
+ts.Session()
+
+	运行TensorFlow操作图的类，使用默认注册的图(可以指定运行图)
+
+会话资源：
+
+	会话可能拥有很多资源，如tf.Variable，tf.QueueBase和ts.ReaderBase，会话结束后需要进行资源释放
+
+1、sess=tf.Session()  sess.run()   sess.close()
+
+2、使用上下文管理器(方便)
+
+	with tf.Session() as sess:
+
+		sess.run()
+
+	config = tf.ConfigProto(log_device_placement=True)
+
+	交互式：tf.InteractiveSession()
+
+
+会话的run()方法：
+
+	run(fetches,feed_dict=None,graph=None)
+
+		运行ops和计算tensor
+
+		嵌套列表，元组，
+
+		namedtuple，dict或OrderedDict(重载的运算符也能运行)
+
+		feed_dict：允许调用者覆盖图中指定张量的值，提供给placeholder使用
+
+		返回值异常：
+
+			RuntimeError：如果它Session处于无效状态(例如已关闭)
+
+			TypeError:如果fetches或feed_dict键无效或引用Tensor不存在
